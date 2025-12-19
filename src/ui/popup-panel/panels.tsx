@@ -34,7 +34,7 @@ class CameraPanel extends React.Component <{
                     <Slider
                         label='Fov'
                         precision={0}
-                        min={35}
+                        min={10}
                         max={150}
                         value={props.observerData.camera.fov}
                         setProperty={(value: number) => props.setProperty('camera.fov', value)} />
