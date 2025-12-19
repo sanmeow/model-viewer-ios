@@ -168,7 +168,7 @@ class CameraControls {
 
     set zoomRange(range: Vec2) {
         this._zoomRange.x = range.x;
-        this._zoomRange.y = range.y <= range.x ? Infinity : range.y;
+        this._zoomRange.y = range.y <= range.x ? Infinity : range.y * 100 ;
         this._orbitController.zoomRange = this._zoomRange;
     }
 
